@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>
+            Apprendre le prime Faces
+        </h1>
+        <h:form> 
+            <p:growl id="growl" showDetail="true" sticky="true" life="2000" class=""/>  
+
+            <p:panel header="Growl">  
+                <h:panelGrid columns="2" cellpadding="5">  
+                    <p:outputLabel for="msg" value="Message:" />   
+                    <p:inputText id="msg" value="#{cmsg.message}" required="true" placeholder="Votre message ici" 
+                                 validatorMessage="HH" converterMessage="Merci pour la saisie" requiredMessage="Vous devez saisir un message sur cette zone!"  />  
+                </h:panelGrid>  
+
+                <p:commandButton value="Save" actionListener="#{cmsg.saveMessage}" update="growl" />  
+            </p:panel> 
+        </h:form>  
+        <h:link outcome="Message" value="Accès Message" />    
+    </h:body>
+</html>
+

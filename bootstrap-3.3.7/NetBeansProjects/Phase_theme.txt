@@ -1,0 +1,24 @@
+Site de suivi et publication des travaux de fin de cycle. 
+Accompagnement de nos étudiants
+
+phases
+	- Proposition du sujet
+	- acceptation/Validation
+	- suivid de direction
+	- affectation des lecteurs
+	- depôt et soutenance
+	- publication
+* l'etudiant ou l'enseignant propose un sijet
+* Departement valide le sujet et affecte le directeur
+* Le Directeur et le Dpt font le suivi(calendrier de travail, noter les Rdv, noter l'évolution,
+ tâches réalisables et réalisées, etc.)
+* A la fin du travail, il y a dépôt 
+* affectation des lectuers
+*soutenance, corection et publication du travail
+acteurs: Etudiant, enseignant, directeur, lecteur, dpt.
+interactions: 
+	- proposer le sujet(Etudiant, directeur, dpt)
+	- valider le sujet(dpt, sujet, directeur, etudiant)
+	- déposer le travail (étudiant, sujet, dpt)
+	- affecter les lecteurs(dpt, lecteurs, directeurs
+		
